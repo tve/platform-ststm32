@@ -30,3 +30,5 @@ if "stm32f1" in env.BoardConfig().get("build.variant"):
     env.SConscript("maple/stm32f1.py")
 elif "stm32f4" in env.BoardConfig().get("build.variant"):
     env.SConscript("maple/stm32f4.py")
+elif "-L0" in env.BoardConfig().get("build.variant"):
+    env.SConscript("stm32l0/stm32l0.py")
